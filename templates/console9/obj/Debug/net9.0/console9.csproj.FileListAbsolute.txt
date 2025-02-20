@@ -1,0 +1,14 @@
+C:\Git\vsc\templates\console9\obj\Debug\net9.0\console9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\vsc\templates\console9\obj\Debug\net9.0\console9.AssemblyInfoInputs.cache
+C:\Git\vsc\templates\console9\obj\Debug\net9.0\console9.AssemblyInfo.cs
+C:\Git\vsc\templates\console9\obj\Debug\net9.0\console9.csproj.CoreCompileInputs.cache
+C:\Git\vsc\templates\console9\bin\Debug\net9.0\console9.exe
+C:\Git\vsc\templates\console9\bin\Debug\net9.0\console9.deps.json
+C:\Git\vsc\templates\console9\bin\Debug\net9.0\console9.runtimeconfig.json
+C:\Git\vsc\templates\console9\bin\Debug\net9.0\console9.dll
+C:\Git\vsc\templates\console9\bin\Debug\net9.0\console9.pdb
+C:\Git\vsc\templates\console9\obj\Debug\net9.0\console9.dll
+C:\Git\vsc\templates\console9\obj\Debug\net9.0\refint\console9.dll
+C:\Git\vsc\templates\console9\obj\Debug\net9.0\console9.pdb
+C:\Git\vsc\templates\console9\obj\Debug\net9.0\console9.genruntimeconfig.cache
+C:\Git\vsc\templates\console9\obj\Debug\net9.0\ref\console9.dll

@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "TabbyBoots",
+  "classifications": ["C#", "Console"],
+  "identity": "Console.9.Template",
+  "name": "ASP.NET Core C# Console 簡易版 .net9.0",
+  "shortName": "console9",
+  "sourceName": "console9",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
