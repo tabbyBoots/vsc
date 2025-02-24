@@ -1,0 +1,4 @@
+C:\Git\vsc\myconsole\bin\Release\net9.0\publish\myconsole.exe
+C:\Git\vsc\myconsole\bin\Release\net9.0\publish\myconsole.dll
+C:\Git\vsc\myconsole\bin\Release\net9.0\publish\myconsole.deps.json
+C:\Git\vsc\myconsole\bin\Release\net9.0\publish\myconsole.runtimeconfig.json

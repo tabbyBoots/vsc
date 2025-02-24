@@ -1,0 +1,15 @@
+C:\Git\vsc\myconsole\bin\Release\net9.0\myconsole.exe
+C:\Git\vsc\myconsole\bin\Release\net9.0\myconsole.deps.json
+C:\Git\vsc\myconsole\bin\Release\net9.0\myconsole.runtimeconfig.json
+C:\Git\vsc\myconsole\bin\Release\net9.0\myconsole.dll
+C:\Git\vsc\myconsole\bin\Release\net9.0\myconsole.pdb
+C:\Git\vsc\myconsole\obj\Release\net9.0\myconsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\vsc\myconsole\obj\Release\net9.0\myconsole.AssemblyInfoInputs.cache
+C:\Git\vsc\myconsole\obj\Release\net9.0\myconsole.AssemblyInfo.cs
+C:\Git\vsc\myconsole\obj\Release\net9.0\myconsole.csproj.CoreCompileInputs.cache
+C:\Git\vsc\myconsole\obj\Release\net9.0\myconsole.sourcelink.json
+C:\Git\vsc\myconsole\obj\Release\net9.0\myconsole.dll
+C:\Git\vsc\myconsole\obj\Release\net9.0\refint\myconsole.dll
+C:\Git\vsc\myconsole\obj\Release\net9.0\myconsole.pdb
+C:\Git\vsc\myconsole\obj\Release\net9.0\myconsole.genruntimeconfig.cache
+C:\Git\vsc\myconsole\obj\Release\net9.0\ref\myconsole.dll
