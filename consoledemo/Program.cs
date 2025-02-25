@@ -2,7 +2,8 @@
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        //Console.WriteLine("Hello, World!");
+        Console.WriteLine("早安 , 你好嗎!");
         //Console.Readkey();
     }
 }
