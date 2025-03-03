@@ -9,11 +9,11 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/bin/Debug/net9.0/csharpdemo.dll",
+      "program": "${workspaceFolder}/bin/Debug/net9.0/csharpdemo2.dll",
       "args": [],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
-      "console": "integratedTerminal" //externalTerminal //integratedTerminal
+      "console": "externalTerminal"
     }
   ]
 }
