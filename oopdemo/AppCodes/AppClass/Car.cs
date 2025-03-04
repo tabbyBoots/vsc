@@ -1,6 +1,4 @@
-/// <summary>
-/// 車子的類別
-/// </summary>
+namespace oop.demo;/// 車子的類別
 public class Car
 {
     /// <summary>

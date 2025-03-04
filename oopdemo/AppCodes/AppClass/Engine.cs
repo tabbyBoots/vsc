@@ -1,24 +1,21 @@
+namespace oop.demo;
 /// 引擎的類別
-public class Engine: Car{
-    /// <summary>
+public class Engine: Car
+{
+
     /// 車號
-    /// </summary>
     public string CarNo { get; set; } = "";
-    /// <summary>
+
     /// 引擎編號
-    /// </summary>
     public string EngineNo { get; set; } = "";
-    /// <summary>
+
     /// 進氣量(cc)
-    /// </summary>
     public int CC { get; set; } = 2000;
-    /// <summary>
+
     /// 汽油類型
-    /// </summary>
     public enOilType OilType { get; set; } = enOilType.Type92;
-    /// <summary>
+
     /// 汽油的基本資訊
-    /// </summary>
     public string BaseInfo
     {
         get
