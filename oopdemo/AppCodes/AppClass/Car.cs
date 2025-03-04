@@ -1,55 +1,34 @@
-namespace oop.demo;
-
-public class Car{
-
-    #region 建構子及解構子
-    public Car()
-    {
-        SetCarData("", "", "");
-    }
-    #endregion
-
-    #region 屬性宣告
-    /// <summary>
-    /// 車牌號碼
-    /// </summary>
-    public string CarNo { get; set; } = "";
+/// <summary>
+/// 車子的類別
+/// </summary>
+public class Car
+{
     /// <summary>
     /// 廠牌名稱
     /// </summary>
     public string BrandName { get; set; } = "";
     /// <summary>
-    /// 車子的型號
+    /// 型號
     /// </summary>
-    public string ModelNo { get; set; } = "";
+    public string ModelName { get; set; } = "";
     /// <summary>
-    /// 設定車子資訊
+    /// 車重(噸)
     /// </summary>
-    /// <param name="carNo">車牌號碼</param>
-    /// <param name="brandName">廠牌名稱</param>
-    /// <param name="modelNo">車子的型號</param>
-    #endregion
-
-    #region 事件
-    public void SetCarData(string carNo, string brandName, string modelNo)
-    {
-        CarNo = carNo;
-        BrandName = brandName;
-        ModelNo = modelNo;
-    }
-    #endregion
-
-    #region 函數
+    public int Weight { get; set; }
     /// <summary>
-    /// 取得車子資訊
+    /// 顏色
     /// </summary>
-    /// <returns></returns>
-    public string GetCarData()
-    {
-        return $"車號:{CarNo} 廠牌:{BrandName} 型號:{ModelNo}";
-    }
-    #endregion
-
+    public enColors Color { get; set; } = enColors.Red;
+    /// <summary>
+    /// 長度(M)
+    /// </summary>
+    public int Length { get; set; }
+    /// <summary>
+    /// 寛度(M)
+    /// </summary>
+    public int Width { get; set; }
+    /// <summary>
+    /// 高度(M)
+    /// </summary>
+    public int Height { get; set; }
 }
-
-
