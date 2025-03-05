@@ -1,6 +1,24 @@
 namespace oop.demo;/// 車子的類別
 public class Car : BaseClass
 {
+    public Car()
+    {
+        ComponentInit();
+        BrandName = "Benz";
+        ModelName = "C300";
+    }
+
+    public Car(string brandName, string modelName)
+    {
+        ComponentInit();
+        BrandName = brandName;
+        ModelName = modelName;
+    }
+
+    public void ComponentInit()
+    {
+        Color = enColors.Red;
+    }
     /// <summary>
     /// 廠牌名稱
     /// </summary>
