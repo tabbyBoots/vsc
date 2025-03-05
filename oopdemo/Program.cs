@@ -3,13 +3,19 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        using var person = new Person();
-        using var daming = new Daming();
-        using var xiaohua = new Xiaohua();
+        UserService.UserNo = "001";
+        UserService.UserName = "王小明";
 
-        Console.WriteLine(person.PersonInfo());
-        Console.WriteLine(daming.PersonInfo());
-        Console.WriteLine(xiaohua.PersonInfo());
+        using var user = new UserService();
+        user.Login();
+        Console.WriteLine(UserService.LoginInfo);
+
+        user.Login("002", "李小華");
+        Console.WriteLine(UserService.LoginInfo);
+
+        user.Logout();
+        Console.WriteLine(UserService.LoginInfo);
+
 
         Console.WriteLine();       
 
