@@ -19,7 +19,7 @@ namespace mvcdebugdemo.Models
 
         public override string GetSQLSelect()
         {
-            string str_query = "SELECT TitleId, TitleNo, TitleName, Remark FROM Titles";
+            string str_query = "SELECT Id, TitleNo, TitleName, Remark FROM Titles";
             return str_query;
         }
     }

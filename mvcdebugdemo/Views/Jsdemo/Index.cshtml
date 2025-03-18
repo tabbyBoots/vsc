@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<input id="clickMe" type="button" value="執行程式" onclick="doFunction();" />
+
+<script>
+    function doFunction() {
+        let a1 = "apple";
+        let b1 = "banana";
+
+        console.log({ a1 });
+        console.log({ b1 });
+        
+        var a = 1;
+        var b = 0;
+        fn1();
+        console.log("5. a:", a);
+        a = 10;
+        console.log("6. a:", a);
+        console.log("7. b:", b);
+
+        function fn1() {
+            console.log("1. a:", a);
+            var a = 5;
+            console.log("2. a:", a);
+            a++;
+            fn2();
+            console.log("4. a:", a);
+        }
+
+        function fn2() {
+            console.log("3. a:", a);
+            a = 20;
+            b = 100;
+        }
+    }
+</script>
