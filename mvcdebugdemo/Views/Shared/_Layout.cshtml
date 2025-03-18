@@ -77,9 +77,12 @@
                                             <hr class="dropdown-divider">
                                         </li>
                                         <li><a class="dropdown-item"
-                                                href="@Url.Action("Index" , "Home" , new {area = ""})">其它功能</a></li>
+                                                href="@Url.Action("Index" , "Home" , new {area = ""})">其它功能</a>
+                                        </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Title", new { area = "" })">職稱管理</a>
+                                        </li>
                                 <li class="nav-item">
                                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">無權限功能</a>
                                 </li>

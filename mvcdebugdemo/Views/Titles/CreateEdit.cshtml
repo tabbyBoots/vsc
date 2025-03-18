@@ -1,0 +1,57 @@
+@model Titles
+
+@{
+    string str_command = (Model.Id == 0) ? "新增" : "修改";
+    ViewData["Title"] = $"職稱資料{str_command}";
+}
+
+<div class="card border-secondary card-size-medium">
+    <div class="card-header bg-secondary text-white">
+        <h5>@ViewData["Title"]</h5>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal  mt-2">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Id)
+
+                <div class="row form-group">
+                    <div class="col-md-2">
+                        @Html.LabelFor(model => model.TitleNo, htmlAttributes: new { @class = "control-label" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.TitleNo, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TitleNo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-2">
+                        @Html.LabelFor(model => model.TitleName, htmlAttributes: new { @class = "control-label" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.TitleName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TitleName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-2">
+                        @Html.LabelFor(model => model.Remark, htmlAttributes: new { @class = "control-label" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Remark, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Remark, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input type="submit" value="異動存檔" class="btn btn-primary" />
+                    <a href="@Url.Action("Index", "Title", new { area = "" })" class="btn btn-success">返回列表</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

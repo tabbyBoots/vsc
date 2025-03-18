@@ -16,5 +16,11 @@ namespace mvcdebugdemo.Models
             if (string.IsNullOrEmpty(OrderByColumn)) OrderByColumn = DefaultOrderByColumn;
             if (string.IsNullOrEmpty(OrderByDirection)) OrderByDirection = DefaultOrderByDirection;
         }
+
+        public override string GetSQLSelect()
+        {
+            string str_query = "SELECT TitleId, TitleNo, TitleName, Remark FROM Titles";
+            return str_query;
+        }
     }
 }
