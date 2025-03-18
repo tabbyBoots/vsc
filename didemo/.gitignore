@@ -9,3 +9,9 @@
 [Bb]in/Release/*.*
 [Bb]in/Debug/net8.0/*.*
 [Bb]in/Release/net8.0/*.*
+
+.DS_Store
+obj/
+bin/
+temp/
+
