@@ -1,30 +1,4 @@
-2025-03-18 10:36:51.192 +08:00 [INF] Now listening on: https://localhost:6060
-2025-03-18 10:36:51.251 +08:00 [INF] Application started. Press Ctrl+C to shut down.
-2025-03-18 10:36:51.252 +08:00 [INF] Hosting environment: Development
-2025-03-18 10:36:51.253 +08:00 [INF] Content root path: /Users/rextrp/Documents/Git/vsc/logmvcdemo
-2025-03-18 10:36:51.541 +08:00 [INF] 2025/03/18 10:36:51 你已經進入首頁了!! 
-2025-03-18 10:39:17.640 +08:00 [INF] Now listening on: https://localhost:6060
-2025-03-18 10:39:17.700 +08:00 [INF] Application started. Press Ctrl+C to shut down.
-2025-03-18 10:39:17.701 +08:00 [INF] Hosting environment: Development
-2025-03-18 10:39:17.701 +08:00 [INF] Content root path: /Users/rextrp/Documents/Git/vsc/logmvcdemo
-2025-03-18 10:39:18.218 +08:00 [INF] 2025/03/18 10:39:18 你已經進入首頁了!! 
-2025-03-18 10:40:25.558 +08:00 [INF] 2025/03/18 10:40:25 你已經進入首頁了!! 
-2025-03-18 10:40:34.556 +08:00 [INF] 2025/03/18 10:40:34 你已經進入首頁了!! 
-[2025-03-18 10:43:07 INF] Now listening on: https://localhost:6060
-[2025-03-18 10:43:07 INF] Application started. Press Ctrl+C to shut down.
-[2025-03-18 10:43:07 INF] Hosting environment: Development
-[2025-03-18 10:43:07 INF] Content root path: /Users/rextrp/Documents/Git/vsc/logmvcdemo
-[2025-03-18 10:43:07 INF] 2025/03/18 10:43:07 你已經進入首頁了!! 
-[2025-03-18 10:43:10 INF] 2025/03/18 10:43:10 你已經進入首頁了!! 
-[2025-03-18 10:43:11 INF] 2025/03/18 10:43:11 你已經進入首頁了!! 
-{"Timestamp":"2025-03-18T10:46:17.3119940+08:00","Level":"Information","MessageTemplate":"Now listening on: {address}","Properties":{"address":"https://localhost:6060","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}}
-{"Timestamp":"2025-03-18T10:46:17.3578400+08:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
-{"Timestamp":"2025-03-18T10:46:17.3593530+08:00","Level":"Information","MessageTemplate":"Hosting environment: {EnvName}","Properties":{"EnvName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
-{"Timestamp":"2025-03-18T10:46:17.3596210+08:00","Level":"Information","MessageTemplate":"Content root path: {ContentRoot}","Properties":{"ContentRoot":"/Users/rextrp/Documents/Git/vsc/logmvcdemo","SourceContext":"Microsoft.Hosting.Lifetime"}}
-{"Timestamp":"2025-03-18T10:46:17.9647820+08:00","Level":"Information","MessageTemplate":"2025/03/18 10:46:17 你已經進入首頁了!! ","TraceId":"c1646fd01eb7c56329ad5c7f45b62e33","SpanId":"0bf612ef4a872fc7","Properties":{"EventId":{"Id":1},"SourceContext":"logmvcdemo.Controllers.HomeController","ActionId":"0e1d2fb4-2965-4071-a57f-e742edcceb96","ActionName":"logmvcdemo.Controllers.HomeController.Index (logmvcdemo)","RequestId":"0HNB5OS7A53A1:00000003","RequestPath":"/","ConnectionId":"0HNB5OS7A53A1"}}
-{"Timestamp":"2025-03-18T10:49:10.4722590+08:00","Level":"Information","MessageTemplate":"Now listening on: {address}","Properties":{"address":"https://localhost:6060","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}}
-{"Timestamp":"2025-03-18T10:49:10.5300590+08:00","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
-{"Timestamp":"2025-03-18T10:49:10.5307990+08:00","Level":"Information","MessageTemplate":"Hosting environment: {EnvName}","Properties":{"EnvName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
-{"Timestamp":"2025-03-18T10:49:10.5310250+08:00","Level":"Information","MessageTemplate":"Content root path: {ContentRoot}","Properties":{"ContentRoot":"/Users/rextrp/Documents/Git/vsc/logmvcdemo","SourceContext":"Microsoft.Hosting.Lifetime"}}
-{"Timestamp":"2025-03-18T10:49:11.0794490+08:00","Level":"Information","MessageTemplate":"使用者 {UserId} 登入成功，來自 IP {IPAddress}","TraceId":"e51d042bdd7457127d6faddce6541370","SpanId":"305ee9b0552cbb84","Properties":{"UserId":"123","IPAddress":"127.0.0.1","SourceContext":"logmvcdemo.Controllers.HomeController","ActionId":"84a94b07-b88f-498e-afa3-b8fff6618991","ActionName":"logmvcdemo.Controllers.HomeController.Index (logmvcdemo)","RequestId":"0HNB5OTQTAHID:00000003","RequestPath":"/","ConnectionId":"0HNB5OTQTAHID"}}
-{"Timestamp":"2025-03-18T10:49:20.5801690+08:00","Level":"Information","MessageTemplate":"使用者 {UserId} 登入成功，來自 IP {IPAddress}","TraceId":"34031b19abec37ed8dec2de6f47e653e","SpanId":"ac98411e0d58d84b","Properties":{"UserId":"123","IPAddress":"127.0.0.1","SourceContext":"logmvcdemo.Controllers.HomeController","ActionId":"84a94b07-b88f-498e-afa3-b8fff6618991","ActionName":"logmvcdemo.Controllers.HomeController.Index (logmvcdemo)","RequestId":"0HNB5OTQTAHID:00000005","RequestPath":"/","ConnectionId":"0HNB5OTQTAHID"}}
+{"Timestamp":"2025-03-18T11:12:01.3213030+08:00","Level":"Information","MessageTemplate":"Now listening on: {address}","Properties":{"address":"https://localhost:6060","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2025-03-18T11:12:01.9972770+08:00","Level":"Information","MessageTemplate":"使用者 {UserId} 登入成功，來自 IP {IPAddress}","TraceId":"280e625163543a14159f208e44f8bd6b","SpanId":"e9143912523c8bae","Properties":{"UserId":"123","IPAddress":"127.0.0.1","SourceContext":"logmvcdemo.Controllers.HomeController","ActionId":"67f0478c-490f-49b8-9103-091d63f023dc","ActionName":"logmvcdemo.Controllers.HomeController.Index (logmvcdemo)","RequestId":"0HNB5PAJEP3JT:00000003","RequestPath":"/","ConnectionId":"0HNB5PAJEP3JT"}}
+{"Timestamp":"2025-03-18T11:12:08.8376010+08:00","Level":"Information","MessageTemplate":"使用者 {UserId} 登入成功，來自 IP {IPAddress}","TraceId":"55e7eb63573760fba4162ac5db47c191","SpanId":"fcab3b991d55d461","Properties":{"UserId":"123","IPAddress":"127.0.0.1","SourceContext":"logmvcdemo.Controllers.HomeController","ActionId":"67f0478c-490f-49b8-9103-091d63f023dc","ActionName":"logmvcdemo.Controllers.HomeController.Index (logmvcdemo)","RequestId":"0HNB5PAJEP3JT:00000007","RequestPath":"/","ConnectionId":"0HNB5PAJEP3JT"}}
+{"Timestamp":"2025-03-18T11:12:10.1210280+08:00","Level":"Information","MessageTemplate":"使用者 {UserId} 登入成功，來自 IP {IPAddress}","TraceId":"c6667dc257c1919c59e7dd7b57a4e440","SpanId":"86fbe186214ed56e","Properties":{"UserId":"123","IPAddress":"127.0.0.1","SourceContext":"logmvcdemo.Controllers.HomeController","ActionId":"67f0478c-490f-49b8-9103-091d63f023dc","ActionName":"logmvcdemo.Controllers.HomeController.Index (logmvcdemo)","RequestId":"0HNB5PAJEP3JT:0000000B","RequestPath":"/","ConnectionId":"0HNB5PAJEP3JT"}}

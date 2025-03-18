@@ -1,4 +1,4 @@
-public class SampleClass 
+public class SampleService
 {
     private readonly ITransient _transient;
     private readonly IScoped _scoped;

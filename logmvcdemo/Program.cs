@@ -17,6 +17,12 @@ Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Override("Microsoft", LogEventLevel.Warning) // 忽略 Microsoft 大部分的日誌
     .MinimumLevel.Override("System", LogEventLevel.Warning) // 忽略 System 大部分的日誌
     .MinimumLevel.Override("Microsoft.Hosting.Lifetime", LogEventLevel.Information) // 保留 Hosting 啟動日誌
+    .Filter.ByExcluding(logEvent =>
+        logEvent.Properties.ContainsKey("SourceContext") &&
+        logEvent.Properties["SourceContext"].ToString().Contains("Microsoft.Hosting.Lifetime") &&
+        (logEvent.MessageTemplate.Text.Contains("Content root path") ||
+        logEvent.MessageTemplate.Text.Contains("Hosting environment:") ||
+        logEvent.MessageTemplate.Text.Contains("Application started. Press Ctrl+C to shut down.")))
     .CreateLogger();
 
 
