@@ -1,38 +1,82 @@
 @{
     ViewData["Title"] = "Index";
+    Layout = null;
 }
 
-<input id="clickMe" type="button" value="執行程式" onclick="doFunction();" />
+<!doctype html>
+<html>
 
-<script>
-    function doFunction() {
-        let a1 = "apple";
-        let b1 = "banana";
+    <head>
+        <link rel="shortcut icon" href="/devtools-samples/favicon-96x96.png" />
+        <title>範例：開始使用 Chrome DevTools 偵錯 JavaScript程式</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            h1 {
+                font-size: 1.5em
+            }
 
-        console.log({ a1 });
-        console.log({ b1 });
-        
-        var a = 1;
-        var b = 0;
-        fn1();
-        console.log("5. a:", a);
-        a = 10;
-        console.log("6. a:", a);
-        console.log("7. b:", b);
+            input,
+            button {
+                min-width: 72px;
+                min-height: 36px;
+                border: 1px solid grey;
+            }
 
-        function fn1() {
-            console.log("1. a:", a);
-            var a = 5;
-            console.log("2. a:", a);
-            a++;
-            fn2();
-            console.log("4. a:", a);
-        }
+            label,
+            input,
+            button {
+                display: block;
+            }
 
-        function fn2() {
-            console.log("3. a:", a);
-            a = 20;
-            b = 100;
-        }
-    }
-</script>
+            input {
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>範例：開始使用 Chrome DevTools 偵錯 JavaScript程式</h1>
+        <label for="num1">請輸入數字 1</label>
+        <input placeholder="數字 1" id="num1">
+        <label for="num2">請輸入數字 2</label>
+        <input placeholder="數字 2" id="num2">
+        <button>計算數字 1 及數字 2 相加起來的結果</button>
+        <p></p>
+        <script>
+            function onClick() {
+                if (inputsAreEmpty()) {
+                    label.textContent = 'Error: one or both inputs are empty.';
+                    return;
+                }
+                updateLabel();
+            }
+            function inputsAreEmpty() {
+                if (getNumber1() === '' || getNumber2() === '') {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            function updateLabel() {
+                var addend1 = getNumber1();
+                console.log('addend1:', addend1);
+                var addend2 = getNumber2();
+                console.log('addend2:', addend2);
+                var sum = parseInt(addend1) + parseInt(addend2);
+                console.log('sum:', sum);
+                label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
+            }
+            function getNumber1() {
+                return inputs[0].value;
+            }
+            function getNumber2() {
+                return inputs[1].value;
+            }
+            var inputs = document.querySelectorAll('input');
+            var label = document.querySelector('p');
+            var button = document.querySelector('button');
+            button.addEventListener('click', onClick);
+        </script>
+    </body>
+
+</html>

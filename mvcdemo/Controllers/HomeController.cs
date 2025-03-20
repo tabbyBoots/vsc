@@ -1,9 +1,12 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using mvcdebugdemo.Models;
+using mvcdemo.Models;
+using mvcdemo.Filters;
+namespace mvcdemo.Controllers;
 
-namespace mvcdebugdemo.Controllers;
+[TypeFilter(typeof(AuthorizationFilter))]
 
+[AuthorizationFilter]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -13,29 +16,29 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [TypeFilter(typeof(ActionFilter))]
+
+    [AuthorizationFilter]
     public IActionResult Index()
     {
         return View();
     }
 
+    [TypeFilter(typeof(ActionFilter))]
+
+    [AuthorizationFilter]
     public IActionResult Privacy()
     {
         return View();
     }
-
-    /// <summary>
-    /// 熱重載範例
-    /// </summary>
-    /// <returns></returns>
-    public IActionResult HotReload()
-    {
-        return View();
-    }
-
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+
+
+
 }

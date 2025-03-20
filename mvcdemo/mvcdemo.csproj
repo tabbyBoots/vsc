@@ -6,17 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <NoWarn>CA1050,CA1822,CS1591,CS8600,CS8601,CS8602,CS8603,CS8604,CS8618,IDE0017,IDE0018,IDE0028,IDE0044,IDE0051,IDE0052,IDE0054,IDE0059,IDE0060,IDE0063,IDE0074,IDE0090,IDE1006,NU1902,NU1903,RCS1110,RCS1118
-    </NoWarn>
-
-    <MvcBuildViews>true</MvcBuildViews>
-
+    <NoWarn>CA1050,CA1822,CS1591,CS8600,CS8601,CS8602,CS8603,CS8604,CS8618,IDE0017,IDE0018,IDE0028,IDE0044,IDE0051,IDE0052,IDE0054,IDE0059,IDE0060,IDE0063,IDE0074,IDE0090,IDE1006,NU1902,NU1903,RCS1110,RCS1118</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <OpenApiDocumentsDirectory>$(MSBuildProjectDirectory)</OpenApiDocumentsDirectory>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
