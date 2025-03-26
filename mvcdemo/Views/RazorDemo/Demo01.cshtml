@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Demo01";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo01</h3>
+<h4 class="text-danger">Razor 基本語法</h5>
+    <hr>
+
+    <!-- 單行指令區塊 -->
+@{
+    var total = 70000;
+}
+@{
+    var myMessage = "明早10點開會!!";
+}
+
+    <!-- 行內運算式 -->
+    <p>你銀行帳戶的金額還剩下 : @total 元</p>
+    <p>客戶留下的訊息為 : @myMessage</p>
+
+    <!-- 多行指令區塊 -->
+@{
+    var greeting = "歡迎光臨本站!!";
+    var weekDay = DateTime.Now.DayOfWeek;
+    var greetingMessage = greeting + " 今天是 : " + weekDay;
+}
+    <p>問候語內容為: @greetingMessage</p>

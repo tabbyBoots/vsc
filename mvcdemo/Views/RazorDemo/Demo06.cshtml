@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Demo06";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo06</h3>
+<h4 class="text-danger">程式碼區分大小寫</h5>
+    <hr>
+
+    <!-- 變數名稱會區分大小寫 -->
+@{
+    var lastName = "史密斯";
+    var LastName = "瓊斯";
+}
+    <p>lastName值為: @lastName</p>
+    <p>LastName值為: @LastName</p>

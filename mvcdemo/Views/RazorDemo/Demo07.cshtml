@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Demo07";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo07</h3>
+<h4 class="text-danger">可以撰寫程式碼來做出決策</h5>
+    <hr>
+
+@{
+    var result = "";
+    var age = 20;
+    result = $"您的年齡為 {age} 歲";
+}
+    <p>@result</p>
+
+@{
+    if (age > 30)
+    { result = "您的年齡大於30歲"; }
+    else
+    { result = "您的年齡小於等於30歲"; }
+}
+    <p>@result</p>
+
+@if (age > 50)
+{ result = "您的年齡大於50歲"; }
+else
+{ result = "您的年齡小於等於50歲"; }
+    <p>@result</p>

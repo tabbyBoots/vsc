@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Demo14";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo14</h3>
+<h4 class="text-danger">使用 &lt;text&gt;&lt;/text&gt; 在 { } 區塊直接輸出文字</h5>
+    <hr>
+
+@for (int i = 1; i <= 10; i++)
+{
+    if (i % 2 == 0)
+    {
+        @i<text>=偶數</text>
+    }
+    else
+    {
+        @i<text>=奇數</text>
+    }
+        <br />
+}

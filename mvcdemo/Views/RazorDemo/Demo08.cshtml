@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Demo08";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo08</h3>
+<h4 class="text-danger">Razor 註解</h5>
+<hr>
+
+@{
+      var result = "我的姓名是湯姆!!";
+    // var result = "我的姓名是湯姆!!";
+      @* var result1 = "我的姓名是湯姆!!";
+      var result2 = "我的姓名是湯姆!!";
+      var result3 = "我的姓名是湯姆!!"; *@
+}
+
+@*
+   這個區塊內是 Razor 的註解，不會執行
+   @{
+      result = "我的姓名是傑克!!";
+   }
+*@
+
+<p>@result</p>

@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Demo11";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo11</h3>
+<h4 class="text-danger">使用 @@( ) 輸出陳述式內容</h5>
+<hr>
+
+@{
+    int int_num1 = 10;
+    int int_num2 = 20;
+}
+
+<p>5 * 3 = @(5 * 3)</p>
+<p>10 + 20 = @(int_num1 + int_num2)</p> 

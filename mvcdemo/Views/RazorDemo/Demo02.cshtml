@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Demo02";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo02</h3>
+<h4 class="text-danger">以大括弧括住程式碼區塊</h5>
+    <hr>
+
+    <!-- 單行指令區塊  -->
+@{
+    var theMonth = DateTime.Now.Month;
+}
+@{
+    var theday = DateTime.Today.ToString("yyyy/MM/dd");
+}
+    <p>現在的日期為 : @theday</p>
+    <p>現在的月份為 : @theMonth</p>
+
+    <!-- 多行指令區塊 -->
+@{
+    var outsideTemp = 79;
+    var weatherMessage = "您好，目前室外溫度為 " + outsideTemp + " 度";
+}
+    <p>今天的天氣為: @weatherMessage</p>

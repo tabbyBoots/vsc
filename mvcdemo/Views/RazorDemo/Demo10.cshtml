@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Demo10";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo10</h3>
+<h4 class="text-danger">使用 @@變數名稱 輸出變數值</h5>
+    <hr>
+
+@{
+    string str_name = "王小明";
+
+}
+
+    <p>我的名字是： @str_name</p>
+    <p>現在的時間是： @DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")</p>

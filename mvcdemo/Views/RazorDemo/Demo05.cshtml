@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Demo05";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo05</h3>
+<h4 class="text-danger">可以用雙引號括住常值字串值</h5>
+    <hr>
+
+    <!-- 字串是被視為文字的字元序列。 若要指定字串，請將它括在雙引號中 -->
+@{
+    var myString = "這是一個字符型式文字";
+}
+    <p>字串值為: @myString</p>
+
+    <!-- 如果您想要顯示的字串包含反斜線字元 () \ 或雙引號 " () ，請使用前面加上運算子的 逐字字串常值@@ -->
+@{
+    var myFilePath = @"C:\MyFolder\";
+}
+    <p>資料夾路徑為: @myFilePath</p>
+
+    <!-- 若要內嵌雙引號，請使用逐字字串常值並重複引號 -->
+@{
+    var myQuote = @"湯姆說: ""您好, 今天是星期一.""";
+}
+    <p>@myQuote</p>

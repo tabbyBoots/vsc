@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Demo12";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo12</h3>
+<h4 class="text-danger">使用 @@{ } 區塊中輸入程式碼內容</h5>
+    <hr>
+
+@{
+    int length = 10;
+    int total = 0;
+    string result = "";
+}
+
+@for (int i = 1; i <= length; i++)
+{
+    total += i;
+    if (i > 1) result += " + ";
+    result += $"{i}";
+}
+
+@{
+    result += $" = {total}";
+}
+
+    <p>@result</p>

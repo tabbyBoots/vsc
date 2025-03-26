@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Demo03";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo03</h3>
+<h4 class="text-danger">在區塊內您會以分號結束每個程式碼語句</h5>
+    <hr>
+
+    <!-- 單行指令區塊  -->
+@{
+    var theMonth = DateTime.Now.Month;
+}
+
+    <!-- 多行指令區塊 -->
+@{
+    var outsideTemp = 79;
+    var weatherMessage = "您好，目前室外溫度為 " + outsideTemp + " 度";
+}
+
+    <!-- 內嵌運算式，所以沒有分號 -->
+    <p>今天的天氣為: @weatherMessage</p>

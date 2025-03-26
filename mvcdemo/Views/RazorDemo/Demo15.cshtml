@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Demo15";
+    Layout = "_Layout";
+}
+
+<h3 class="text-primary">Razor Demo15</h3>
+<h4 class="text-danger">Razor 與 HTML 混合使用</h5>
+<hr>
+
+<h5>範例一</h5>
+@{
+    int a=1;
+    int b = 2;
+   <p>合計 = @(a+b)</p>
+}
+<hr>
+<h5>範例二</h5>
+@{
+    string[] fruits = { "蘋果", "柳丁", "香蕉" };    
+    <ul>
+      @foreach (var item in fruits)
+      {
+        <li>@item</li>    
+      }
+    </ul>
+
+    if (fruits.Length > 2)
+    {
+        @:太多
+    }
+}
+<hr>
+<h5>範例三</h5>
+@{
+    var name = "mvc";  
+}  
+<p>@name 您好</p>
