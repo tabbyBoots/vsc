@@ -1,0 +1,37 @@
+@model adonetdemo.Models.Users
+
+@{
+    ViewData["Title"] = "讀取單一使用者資料";
+}
+
+<div class="card border-secondary card-size-small">
+    <div class="card-header bg-secondary text-white">
+        <h5>@ViewData["Title"]</h3>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3">
+                @Html.DisplayNameFor(model => model.UserNo) ：
+            </div>
+            <div class="col-md-9">
+                @Html.DisplayFor(model => model.UserNo)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                @Html.DisplayNameFor(model => model.UserName) ：
+            </div>
+            <div class="col-md-9">
+                @Html.DisplayFor(model => model.UserName)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                @Html.DisplayNameFor(model => model.Remark) ：
+            </div>
+            <div class="col-md-9">
+                @Html.DisplayFor(model => model.Remark)
+            </div>
+        </div>
+    </div>
+    <div>

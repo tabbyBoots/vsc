@@ -1,0 +1,46 @@
+@model IEnumerable<Users>
+
+@{
+    ViewData["Title"] = "使用者資料列表";
+}
+
+<div class="card border-secondary">
+    <div class="card-header bg-secondary text-white">
+        <h5>@ViewData["Title"]</h3>
+    </div>
+    <div class="card-body">
+        <div class="overflow-scroll">
+            <table class="table table-bordered">
+                <thead class="bg-secondary text-white">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.UserNo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.UserName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Remark)
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UserNo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UserName)
+                            </td>
+                            <td class="table-wrap">
+                                @Html.DisplayFor(modelItem => item.Remark)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
