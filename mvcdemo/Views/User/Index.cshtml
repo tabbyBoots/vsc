@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+    string LoginInfo = "未登入";
+    if (!string.IsNullOrEmpty(ViewBag.UserName))
+    {
+        LoginInfo = $"登入者: {ViewBag.UserName}";
+    }
+}
+
+<div class="card card-size-medium mt-5">
+    <div class="card-header bg-secondary text-white">
+        <div class="pt-2 px-2">
+            <div class="float-start">
+                <h4>View Html Helper 範例</h4>
+            </div>
+            <div class="float-end">
+                <h4>@LoginInfo</h4>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="float-start">
+                    @Html.ActionLink("使用者登入", "Login", "User", new { area = "" }, new
+                    {
+                        @class = "btn btn-success btn-lg"
+                                        })
+                </div>
+                <div class="float-end">
+                    @Html.ActionLink("使用者註冊", "Register", "User", new { area = "" }, new
+                                        {
+                        @class = "btn btn-primary btn-lg"
+                                        })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

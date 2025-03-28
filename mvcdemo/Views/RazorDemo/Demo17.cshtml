@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Demo17";
+    Layout = "_Layout";
+    string str_viewdata = ViewData["UserNo"].ToString();
+    string str_viewbag = ViewBag.UserNo;
+    string str_tempdata = TempData["UserNo"].ToString();
+}
+<h3 class="text-primary">Razor Demo17</h3>
+<h4 class="text-danger">ViewData 與 ViewBag 與 TempData的使用</h5>
+<hr>
+
+<h3>ViewData["UserNo"] 值 = @str_viewdata</h3>
+<h3>ViewBag.UserNo 值 = @str_viewbag</h3>
+<h3>TempData["UserNo"] 值 = @str_tempdata</h3>
